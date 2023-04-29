@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="heading">
+    <h1 id="verdict" class="words">SNAKE IN MY ASS</h1>
+
+    <button id="button" class="button-07">START GAME</button>
+
+    <h2 id="score" class="words">SCORE = 0</h2>
+  </div>
+
+  <div class="grid-container" id="container">
+    
+  </div>
+
+  <script>
+    for(let i = 0;i < 12*12;i++) {
+        var div = document.createElement("div");
+        div.className = "grid-item";
+        div.id = i.toString();
+        document.getElementById("container").appendChild(div);
+    }
+  </script>
+  
+
+  <script src="index.js"></script>
+</body>
+
+
+</html>
+
